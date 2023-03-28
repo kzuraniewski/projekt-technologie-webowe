@@ -1,0 +1,20 @@
+:root {
+	--color-text-on-primary: #000;
+	--color-text-on-primary-muted: #7f7f7f;
+	--color-text-on-secondary: #fff;
+	--color-primary-light: #fff;
+	--color-primary: #f6f6f6;
+	--color-secondary: #31cdc9;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: var(--color-text-on-primary);
+	background-color: var(--color-primary);
+}

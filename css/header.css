@@ -1,0 +1,38 @@
+.header {
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	position: sticky;
+	background-color: var(--color-primary-light);
+
+	@media (min-width: 576px) {
+		padding: 30px 0;
+	}
+}
+
+.logo {
+	width: 30px;
+	height: 30px;
+	background-color: red;
+}
+
+.nav__links {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+}
+
+.nav__link {
+	color: var(--color-text-on-primary);
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: 0.15s;
+}
+.nav__link:hover {
+	color: var(--color-secondary);
+}
