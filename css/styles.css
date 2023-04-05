@@ -1,0 +1,164 @@
+:root {
+	--color-text-on-primary: #000;
+	--color-text-on-primary-muted: #7f7f7f;
+	--color-text-on-secondary: #fff;
+	--color-primary-light: #fff;
+	--color-primary: #f6f6f6;
+	--color-secondary: #31cdc9;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: var(--color-text-on-primary);
+	background-color: var(--color-primary);
+}
+
+/* === */
+
+.header {
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	position: sticky;
+	background-color: var(--color-primary-light);
+}
+
+.logo {
+	width: 30px;
+	height: 30px;
+	background-color: red;
+}
+
+.nav__links {
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+}
+
+.nav__link {
+	color: var(--color-text-on-primary);
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: 0.15s;
+}
+.nav__link:hover {
+	color: var(--color-secondary);
+}
+
+.page-title {
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.paragraph {
+	color: var(--color-text-on-primary-muted);
+	max-width: 32rem;
+	line-height: 1.7;
+}
+.paragraph--centered {
+	text-align: center;
+}
+
+.section {
+	padding: 30px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.section--full-width {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+}
+
+.showcase {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.showcase__image {
+	width: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+}
+.showcase__image:nth-of-type(n + 5) {
+	display: none;
+}
+
+/* === */
+
+.stack {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+/* === */
+
+@media (min-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+
+	.section {
+		padding: 70px 0;
+	}
+
+	.showcase__image:nth-of-type(n + 5) {
+		display: block;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+
+	.header {
+		padding: 30px 0;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1320px;
+	}
+}
