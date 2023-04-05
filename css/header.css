@@ -4,10 +4,6 @@
 	justify-content: space-between;
 	position: sticky;
 	background-color: var(--color-primary-light);
-
-	@media (min-width: 576px) {
-		padding: 30px 0;
-	}
 }
 
 .logo {
@@ -19,7 +15,7 @@
 .nav__links {
 	display: flex;
 	justify-content: space-between;
-	gap: 1rem;
+	gap: 2rem;
 	align-items: center;
 	text-transform: uppercase;
 	font-size: 0.9rem;
@@ -27,7 +23,6 @@
 
 .nav__link {
 	color: var(--color-text-on-primary);
-	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
 	letter-spacing: 1px;
@@ -35,4 +30,10 @@
 }
 .nav__link:hover {
 	color: var(--color-secondary);
+}
+
+@media (min-width: 576px) {
+	.header {
+		padding: 30px 100px;
+	}
 }
