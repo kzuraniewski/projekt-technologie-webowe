@@ -131,6 +131,31 @@ a {
 	color: var(--color-text-on-secondary);
 }
 
+.form {
+	
+}
+
+.form__field {
+	background-color: var(--color-primary-light);
+	padding: 1rem;
+	margin-bottom: 20px;
+	font-size: 1.3rem;
+}
+textfield.form_field {
+	min-height: 10rem;
+}
+
+.form__submit {
+	padding: 2rem 3rem;
+	background-color: var(--color-secondary);
+	text-transform: uppercase;
+}
+
+.form__input-group {
+	display: flex;
+	gap: 20px;
+}
+
 /* === */
 
 .stack {
