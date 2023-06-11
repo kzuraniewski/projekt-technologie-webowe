@@ -127,28 +127,37 @@ a {
 }
 
 .footer__title {
-	margin-bottom: .7rem;
+	margin-bottom: 0.7rem;
 	color: var(--color-text-on-secondary);
 }
 
 .form {
-	
+	display: flex;
+	flex-direction: column;
 }
 
 .form__field {
-	background-color: var(--color-primary-light);
 	padding: 1rem;
 	margin-bottom: 20px;
+	color: var(--color-text-on-primary-muted);
+	border: none;
+	background-color: var(--color-primary-light);
 	font-size: 1.3rem;
 }
-textfield.form_field {
-	min-height: 10rem;
+.form__field::placeholder {
+	color: #b5b5b5;
 }
 
 .form__submit {
 	padding: 2rem 3rem;
+	border: none;
+	color: var(--color-text-on-secondary);
 	background-color: var(--color-secondary);
 	text-transform: uppercase;
+	transition: 0.15s;
+}
+.form__submit:hover {
+	filter: brightness(85%);
 }
 
 .form__input-group {
